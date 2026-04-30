@@ -1,4 +1,4 @@
-name: Deploy AIOps App
+name: Deploy AIOps App v2
 
 on:
   push:
