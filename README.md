@@ -11,3 +11,4 @@ Features:
 - Multi-region failover with Route53
 
 Designed to simulate real-world DevOps/SRE workflows with AI-driven observability and automation.
+From metrics to intelligence: building self-healing cloud systems.
