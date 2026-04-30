@@ -1,0 +1,19 @@
+alertmanager:
+  enabled: true
+
+  config:
+    global:
+      resolve_timeout: 5m
+
+    route:
+      receiver: lambda-webhook
+      group_by: ["alertname"]
+      group_wait: 10s
+      group_interval: 30s
+      repeat_interval: 1m
+
+    receivers:
+      - name: lambda-webhook
+        webhook_configs:
+          - url: "https://ly3dnifgn4dlbkhnan7d452g540dfwqi.lambda-url.ap-south-1.on.aws/"
+            send_resolved: true
