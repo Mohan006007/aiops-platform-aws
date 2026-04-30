@@ -14,21 +14,22 @@ spec:
     spec:
       containers:
       - name: aiops-container
-        image: 823557602257.dkr.ecr.ap-south-1.amazonaws.com/aiops-app:latest
+        image: 823557602257.dkr.ecr.ap-south-1.amazonaws.com/aiops-app:v3
+        imagePullPolicy: Always
         ports:
         - containerPort: 5000
         - containerPort: 8000
 
-readinessProbe:
-  httpGet:
-    path: /health
-    port: 5000
-  initialDelaySeconds: 5
-  periodSeconds: 5
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: 5000
+          initialDelaySeconds: 5
+          periodSeconds: 5
 
-livenessProbe:
-  httpGet:
-    path: /health
-    port: 5000
-  initialDelaySeconds: 10
-  periodSeconds: 10
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 5000
+          initialDelaySeconds: 10
+          periodSeconds: 10
