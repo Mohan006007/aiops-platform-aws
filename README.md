@@ -1,14 +1,39 @@
-Production-grade AIOps platform built on AWS with Kubernetes (EKS), Prometheus, Grafana, and SageMaker. 
+# 🚀 AI-Driven Self-Healing AIOps Platform on AWS
 
-Features:
-- Containerized microservices deployed on EKS
-- Real-time monitoring using Prometheus + Grafana
-- ML-based anomaly detection using SageMaker (Random Cut Forest)
-- Event-driven pipeline with Kinesis and Lambda
-- Automated alerting via SNS and chatbot integrations
-- CI/CD pipeline using GitHub Actions
-- Cost anomaly detection using AWS Cost Explorer APIs
-- Multi-region failover with Route53
+Production-grade cloud-native AIOps platform built on AWS using Kubernetes (EKS), Prometheus, Grafana, Alertmanager, GitHub Actions, and AWS Lambda for automated monitoring, alerting, CI/CD, and self-healing remediation workflows.
 
-Designed to simulate real-world DevOps/SRE workflows with AI-driven observability and automation.
-From metrics to intelligence: building self-healing cloud systems.
+---
+
+# 📌 Project Overview
+
+This project simulates a real-world AIOps/DevOps environment with:
+
+- Kubernetes-based application deployment on Amazon EKS
+- Real-time observability using Prometheus + Grafana
+- Automated CI/CD pipeline with GitHub Actions
+- Alert-driven incident response using Alertmanager
+- AWS Lambda webhook integration for automated remediation
+- Self-healing deployment rollback and recovery workflows
+
+The platform demonstrates how modern SRE/DevOps systems can automatically detect, analyze, and respond to infrastructure and application failures in real time.
+
+---
+
+# 🏗️ Architecture
+
+```text
+GitHub Actions
+        ↓
+Docker Build & Push
+        ↓
+Amazon ECR
+        ↓
+Amazon EKS (Kubernetes)
+        ↓
+Prometheus Metrics Collection
+        ↓
+Alertmanager
+        ↓
+AWS Lambda Webhook
+        ↓
+Automated Remediation / Incident Response
