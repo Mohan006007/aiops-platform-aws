@@ -212,19 +212,6 @@ Example:
 if name == "HighCPUUsage":
     print("⚡ Triggering auto-remediation...")
 ```
-
----
-
-# 📸 Screenshots (Recommended)
-
-Add screenshots for:
-
-- Grafana Dashboard
-- GitHub Actions Pipeline
-- Alertmanager UI
-- Lambda Logs
-- Kubernetes Pods
-
 ---
 
 # 💡 Learning Outcomes
