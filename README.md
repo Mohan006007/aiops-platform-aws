@@ -137,6 +137,7 @@ aiops-platform-aws/
 ├── app/                    # Flask application
 ├── docker/                 # Docker configuration
 ├── k8s/                    # Kubernetes manifests
+├── screenshots/            # Project screenshots
 ├── README.md
 ```
 
@@ -212,6 +213,39 @@ Example:
 if name == "HighCPUUsage":
     print("⚡ Triggering auto-remediation...")
 ```
+
+---
+
+# 📸 Screenshots
+
+## GitHub Actions CI/CD
+![GitHub Actions](screenshots/github-actions-success.png)
+
+---
+
+## Grafana Dashboard
+![Grafana Dashboard](screenshots/grafana-dashboard.png)
+
+---
+
+## Prometheus Alerts
+![Prometheus Alerts](screenshots/prometheus-alerts.png)
+
+---
+
+## Alertmanager UI
+![Alertmanager UI](screenshots/alertmanager-ui.png)
+
+---
+
+## AWS Lambda Logs
+![Lambda Logs](screenshots/lambda-logs.png)
+
+---
+
+## Kubernetes Pods
+![Kubernetes Pods](screenshots/kubectl-pods.png)
+
 ---
 
 # 💡 Learning Outcomes
